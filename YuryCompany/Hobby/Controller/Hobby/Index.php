@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace YuryCompany\Hobby\Controller\Hobby;
 
 use Magento\Framework\App\Action\HttpGetActionInterface as HttpGetActionInterface;
-use Magento\Framework\Controller\ResultFactory;
 
 class Index extends \Magento\Customer\Controller\AbstractAccount implements HttpGetActionInterface
 {

@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace YuryCompany\Hobby\Setup\Patch\Data;
 
+use Magento\Customer\Model\Customer;
+use Magento\Eav\Model\Config;
 use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
-use Magento\Customer\Model\Customer;
-use Magento\Eav\Model\Config;
 
 class AddCustomerHobbyAttribute implements DataPatchInterface
 {
@@ -50,23 +50,23 @@ class AddCustomerHobbyAttribute implements DataPatchInterface
      */
     public function apply()
     {
-//        /** @var EavSetup $eavSetup */
-//        $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
-//
-//        $eavSetup->addAttribute('catalog_product', 'helloworld', [
-//            'type' => 'int',
-//            'label' => 'HelloWorld',
-//            'input' => 'select',
-//            'source' => 'Magento\Eav\Model\Entity\Attribute\Source\Boolean',
-//            'default' => 0,
-//            'global' => ScopedAttributeInterface::SCOPE_STORE,
-//            'visible' => true,
-//            'used_in_product_listing' => true,
-//            'user_defined' => true,
-//            'required' => false,
-//            'group' => 'General',
-//            'sort_order' => 80,
-//        ]);
+        //        /** @var EavSetup $eavSetup */
+        //        $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
+        //
+        //        $eavSetup->addAttribute('catalog_product', 'helloworld', [
+        //            'type' => 'int',
+        //            'label' => 'HelloWorld',
+        //            'input' => 'select',
+        //            'source' => 'Magento\Eav\Model\Entity\Attribute\Source\Boolean',
+        //            'default' => 0,
+        //            'global' => ScopedAttributeInterface::SCOPE_STORE,
+        //            'visible' => true,
+        //            'used_in_product_listing' => true,
+        //            'user_defined' => true,
+        //            'required' => false,
+        //            'group' => 'General',
+        //            'sort_order' => 80,
+        //        ]);
 
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
 

@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace YuryCompany\Hobby\Controller\Hobby;
 
-use Magento\Framework\Controller\ResultFactory;
-use Magento\Framework\App\Action\HttpPostActionInterface;
 use Magento\Customer\Controller\AbstractAccount;
+use Magento\Framework\App\Action\HttpPostActionInterface;
+use Magento\Framework\Controller\ResultFactory;
 
 class Save extends AbstractAccount implements HttpPostActionInterface
 {
@@ -47,7 +47,6 @@ class Save extends AbstractAccount implements HttpPostActionInterface
 
                 // Display the success form validation message
                 $this->messageManager->addSuccessMessage('Customer\'s hobby has been updated!');
-
 
             } catch (AlreadyExistsException $e) {
                 throw new AlreadyExistsException(__($e->getMessage()), $e);
