@@ -1,0 +1,7 @@
+type Customer {
+    hobby: String @resolver(class: "YuryCompany\\Hobby\\Model\\Resolver\\Customer\\Hobby")
+}
+
+input CustomerInput {
+    hobby: Int @doc(description: "The customer's hobby (null, Yoga - 1, Traveling - 2, Hiking - 3).")
+}

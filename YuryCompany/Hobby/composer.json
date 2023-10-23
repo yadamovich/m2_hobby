@@ -1,0 +1,21 @@
+{
+    "name": "yurycompany/hobby",
+    "description": "Custom customer attribute `Hobby`.",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "^8.1",
+        "magento/module-customer": "^103.0.6"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "YuryCompany\\Hobby\\": ""
+        }
+    }
+}
